@@ -1,0 +1,50 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+
+  :root {
+    --main-bg-border: 5px solid black; 
+}
+  #outer {
+    width: 200px;
+    position: absolute;
+    height: 100px;
+    overflow: hidden;
+    font-size: 0;
+    border-right: var(--main-bg-border); 
+    
+  }
+  #outer div {
+    
+    width :25%;
+    height: 100px;
+    display: inline-block;
+    border-left: var(--main-bg-border);
+    border-top: var(--main-bg-border);
+    border-bottom: var(--main-bg-border); 
+    box-sizing: border-box;
+  }
+
+  #outer div:first-child {
+    background-color: ghostwhite;
+    width :25%;
+ 
+}
+
+#outer div:nth-child(2) {
+    background-color: forestgreen;
+ 
+}
+#outer div:nth-child(3) {
+    background-color: darkgoldenrod;
+
+}
+
+#outer div:last-child {
+    background-color: steelblue;
+
+     /* border-right: var(--main-bg-border);  */
+}
+
+  
